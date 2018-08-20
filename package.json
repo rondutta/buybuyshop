@@ -1,0 +1,17 @@
+{
+  "name": "buybuyshop",
+  "version": "1.0.0",
+  "description": "an ecommerce website in node",
+  "main": "server.js",
+  "author": "Rayan Dutta",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "ejs-mate": "^2.3.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.0"
+  }
+}
