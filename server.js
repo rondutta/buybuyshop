@@ -5,8 +5,8 @@ var bodyParser = require('body-parser');
 var ejs = require('ejs');
 var engine = require('ejs-mate');
 
-var User = require('./models/user');
 var mainRoutes = require('./routes/main');
+var userRoutes = require('./routes/user');
 
 var app = express();
 
@@ -22,6 +22,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(mainRoutes);
+app.use(userRoutes);
 app.engine('ejs',engine);
 app.set('view engine','ejs');
 
